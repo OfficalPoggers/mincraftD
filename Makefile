@@ -1,5 +1,5 @@
-main: main.cpp
-	g++ -o main src/main.cpp
+minecraft2D:
+	g++ -o minecraft2D src/main.cpp -lX11 -lGL -lpthread -lpng -lstdc++fs
 
-main.cpp:
-	
+clean:
+	rm ./minecraft2D
